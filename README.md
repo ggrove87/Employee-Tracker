@@ -6,9 +6,9 @@ Contact: Gene Grove - gwg1387@gmail.com
 
 Associated Links
 
-GIT Pages Link: https://ggrove87.github.io/NoteTaker/
+GIT Pages Link: https://ggrove87.github.io/Employee-Tracker/
 
-GIT Repository Link: https://github.com/ggrove87/NoteTaker
+GIT Repository Link: https://github.com/ggrove87/Employee-Tracker
 
 Heroku Link: https://shrouded-sierra-86347.herokuapp.com/
 
