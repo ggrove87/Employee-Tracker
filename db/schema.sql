@@ -1,11 +1,12 @@
+DROP DATABASE IF EXISTS my_company_db;
 CREATE DATABASE my_company_db;
 
 USE my_company_db;
 
-CREATE TABLE department (
+CREATE TABLE departments (
     id INT AUTO_INCREMENT PRIMARY KEY,
     department_name VARCHAR(30) NOT NULL
-)
+);
 
 CREATE TABLE roles (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -13,9 +14,9 @@ CREATE TABLE roles (
     department_id INT,
     salary DECIMAL(10,2),
     FOREIGN KEY (department_id)
-    REFERENCES department(id)
+    REFERENCES departments(id)
     ON DELETE SET NULL
-)
+);
 
 CREATE TABLE employees (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -27,6 +28,6 @@ CREATE TABLE employees (
     REFERENCES roles(id)
     ON DELETE SET NULL,
     FOREIGN KEY (manager_id)
-    REFERENCES employee(id)
+    REFERENCES employees(id)
     ON DELETE SET NULL
-)
+);
