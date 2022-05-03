@@ -20,7 +20,7 @@ async function init(){
 async function awaitMySqlWithInquirer(){
     await init()
 
-    const [employees] =  await db.execute("select * from employee")
+    const [employees] =  await db.execute("SELECT * FROM employees")
 
     console.table(employees);
     
