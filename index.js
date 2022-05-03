@@ -10,9 +10,9 @@ async function init(){
           host: 'localhost',
           user: 'root',
           password: 'root',
-          database: 'employees'
+          database: 'my_company_db'
         },
-        console.log(`Connected to the employees_db database.`)
+        console.log(`Connected to the my_company_db database.`)
       );
 
 
